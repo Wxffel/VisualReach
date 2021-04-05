@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "visualreach",
+  "version": "1.0.0",
+
+  "name": "VisualReach",
+  "description": "This mod helps you get the best out of your reach.",
+  "authors": [{
+    "name": "Wxffel",
+    "visualreach_discord": "Waffel#1639"
+  }],
+
+  "contact": {
+    "sources": "https://github.com/Wxffel/VisualReach"
+  },
+
+  "environment": "client",
+
+  "entrypoints": {
+    "client": ["de.kpaw.visualreach.VisualReachKt::init"]
+  },
+
+  "mixins": ["visualreach.mixins.json"],
+
+  "depends": {
+    "minecraft": ">=1.16.2",
+    "fabricloader": ">=0.4.0",
+    "fabric": "*",
+    "fabric-language-kotlin": "*"
+  }
+}

@@ -1,0 +1,9 @@
+# Gradle
+.gradle/
+build/
+
+# Editors
+.idea/
+
+# Fabric
+run/
