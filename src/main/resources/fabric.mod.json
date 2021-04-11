@@ -5,10 +5,7 @@
 
   "name": "VisualReach",
   "description": "This mod helps you get the best out of your reach.",
-  "authors": [{
-    "name": "Wxffel",
-    "visualreach_discord": "Waffel#1639"
-  }],
+  "authors": ["Wxffel"],
 
   "contact": {
     "sources": "https://github.com/Wxffel/VisualReach"
