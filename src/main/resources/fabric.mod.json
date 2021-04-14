@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "visualreach",
-  "version": "1.0.0",
+  "version": "${version}",
 
   "name": "VisualReach",
   "description": "This mod helps you get the best out of your reach.",
