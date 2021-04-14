@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 val minecraftVersion = "1.16.5"
 val yarnMappingsVersion = "1.16.5+build.6:v2"
 val fabricLoaderVersion = "0.11.3"
@@ -7,7 +5,7 @@ val fabricApiVersion = "0.32.5+1.16"
 val fabricLanguageKotlinVersion = "1.5.0+kotlin.1.4.31"
 
 val jvmVersion = JavaVersion.VERSION_1_8
-val jvmVersionString = jvmVersion.versionString
+val jvmVersionString = "1.8"
 
 group = "de.kpaw"
 version = "1.0.0"
@@ -40,15 +38,7 @@ tasks {
 
 tasks.processResources {
     inputs.property("version", project.version)
-
     filesMatching("fabric.mod.json") {
         expand("version" to project.version)
     }
 }
-
-val JavaVersion.versionString get() = majorVersion.let {
-    val version = it.toInt()
-    if (version <= 10) "1.$it" else it
-}
-
-fun TaskProvider<KotlinCompile>.configureJvmVersion() { get().kotlinOptions.jvmTarget = jvmVersionString }
